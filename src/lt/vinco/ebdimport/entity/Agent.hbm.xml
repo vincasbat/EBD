@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Agent" table="agent">
+      
+  <id name="idagent" type="java.lang.Integer" column="idagent"> <generator class="native"/>   </id>
+  <property name="dmspecia" type="java.lang.Short">   <column name="dmspecia"/>  </property>
+  <property name="kdagent" type="java.lang.Short">   <column name="kdagent"/>  </property>
+  <property name="fnagent" type="string">   <column name="fnagent"/>  </property>
+  <property name="midnagent" type="string">   <column name="midnagent"/>  </property>
+  <property name="nmagent" type="string">   <column name="nmagent"/>  </property>
+  <property name="adagent" type="string">   <column name="adagent"/>  </property>
+  <property name="idcountry" type="string">   <column name="idcountry"/>  </property>  
+  <property name="epidagent" type="java.lang.Integer">   <column name="epidagent"/>  </property>   
+  <property name="nmtown" type="string">   <column name="nmtown"/>  </property>
+</class>
+</hibernate-mapping>

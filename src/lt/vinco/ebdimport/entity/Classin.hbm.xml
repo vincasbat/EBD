@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 6, 2013 11:04:15 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="lt.vinco.ebdimport.entity.Classin" table="classin" >
+        
+         <composite-id name="id" class="lt.vinco.ebdimport.entity.ClassinId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+            <key-property name="ipcclass" type="string">
+                <column name="ipcclass" />
+            </key-property>
+        </composite-id>
+        
+        
+        
+      
+        <property name="ipcversion" type="java.lang.Short">   
+            <column name="ipcversion" />  
+        </property>
+        <property name="odclass" type="java.lang.Short">   
+            <column name="odclass"/>  
+        </property>
+        <property name="odlink" type="java.lang.Short">   
+            <column name="odlink" />  
+        </property>
+        <property name="tyipcclass" type="java.lang.Short">   
+            <column name="tyipcclass" />  
+        </property>
+         <property name="dtversion" type="java.sql.Date">   <column name="dtversion"/>  </property>
+        <property name="symbpos" type="java.lang.Short">   
+            <column name="symbpos" />  
+        </property>
+ <property name="tyclassif" type="java.lang.Short">   
+            <column name="tyclassif" />  
+        </property>
+   <property name="dtaction" type="java.sql.Date">   <column name="dtaction"/>  </property>
+   <property name="stclassif" type="java.lang.Short">   
+            <column name="stclassif" />  
+        </property>
+     <property name="scclassif" type="java.lang.Short">   
+            <column name="scclassif" />  
+        </property>
+       <property name="origin" type="string">
+            <column name="origin" length="56" />
+        </property>
+     
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Jcs_owner" table="jcs_owner">
+   <id name="idowner" type="java.lang.Integer" column="idowner"> <generator class="native"/>   </id>
+  <property name="epidowner" type="java.lang.Integer">   <column name="epidowner"/>  </property>
+  <property name="ntincorp" type="java.lang.Short">   <column name="ntincorp"/>  </property> 
+  <property name="nmowner" type="string">   <column name="nmowner"/>  </property>
+   <property name="adowner" type="string">   <column name="adowner"/>  </property>
+    <property name="idcountry" type="string">   <column name="idcountry"/>  </property>
+     <property name="nmtown" type="string">   <column name="nmtown"/>  </property>
+      <property name="unmowner" type="string">   <column name="unmowner"/>  </property>
+      <property name="paycat" type="java.lang.Short">   <column name="paycat"/>  </property>  
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Own" table="own">
+      
+       <composite-id name="id" class="lt.vinco.ebdimport.entity.OwnId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+             <key-property name="idowner" type="java.lang.Integer">
+                <column name="idowner" />
+            </key-property>
+        </composite-id>
+  <property name="odowner" type="java.lang.Short">   <column name="odowner"/>  </property>
+  <property name="is_adr" type="java.lang.Short">   <column name="is_adr"/>  </property>
+   </class>
+</hibernate-mapping>

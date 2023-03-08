@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 13, 2012 10:00:03 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="lt.vinco.ebdimport.entity.History" table="history" schema="informix" dynamic-update="true"> 
+        <!--catalog="europat_t"-->
+        <composite-id name="id" class="lt.vinco.ebdimport.entity.HistoryId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+            <key-property name="odhisto" type="java.lang.Short">
+                <column name="odhisto" />
+            </key-property>
+        </composite-id>
+        <property name="idoper" type="string">
+            <column name="idoper" length="5" not-null="true" />
+        </property>
+        <property name="dtoper" type="date">
+            <column name="dtoper" length="4" not-null="true" />
+        </property>
+        <property name="oldinfo" type="string">
+            <column name="oldinfo" length="56" />
+        </property>
+        <property name="rmhisto" type="string">
+            <column name="rmhisto" length="2810" />
+        </property>
+        <property name="sthisto" type="short">
+            <column name="sthisto" not-null="true" />
+        </property>
+        <property name="iduseroper" type="java.lang.Short">
+            <column name="iduseroper" />
+        </property>
+        <property name="cddecioper" type="java.lang.Short">
+            <column name="cddecioper" />
+        </property>
+        <property name="dtdecioper" type="date">
+            <column name="dtdecioper" length="4" />
+        </property>
+        <property name="stpay" type="java.lang.Short">
+            <column name="stpay" />
+        </property>
+        <property name="dtlegal" type="date">
+            <column name="dtlegal" length="4" />
+        </property>
+        <property name="dtaction" type="date">
+            <column name="dtaction" length="4" />
+        </property>
+        <property name="lvlpubli" type="java.lang.Short">
+            <column name="lvlpubli" />
+        </property>
+        <property name="idgenbefore" type="java.lang.Integer">
+            <column name="idgenbefore" />
+        </property>
+        <property name="idgenafter" type="java.lang.Integer">
+            <column name="idgenafter" />
+        </property>
+        <property name="gengen" type="int">
+            <column name="gengen" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

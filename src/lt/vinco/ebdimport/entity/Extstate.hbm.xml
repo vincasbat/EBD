@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Extstate" table="extstate">
+       <composite-id name="id" class="lt.vinco.ebdimport.entity.ExtstateId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+             <key-property name="idcountry" type="string">
+                <column name="idcountry" />
+            </key-property>
+        </composite-id>
+       
+  <property name="dtrpay" type="date">   <column name="dtrpay"/>  </property>
+  <property name="dtwithdraw" type="date">   <column name="dtwithdraw"/>  </property>
+       
+  </class>
+</hibernate-mapping>

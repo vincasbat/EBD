@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Division" table="division">
+      
+       <composite-id name="id" class="lt.vinco.ebdimport.entity.DivisionId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+            <key-property name="idapplidiv" type="string">
+                <column name="idapplidiv" />
+            </key-property>
+        </composite-id>
+      
+      
+  </class>
+</hibernate-mapping>

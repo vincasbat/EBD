@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Pctref" table="pctref">
+
+<composite-id name="id" class="lt.vinco.ebdimport.entity.PctrefId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+            <key-property name="odpctep" type="java.lang.Short">
+                <column name="odpctep" />
+            </key-property>
+        </composite-id>
+        
+     <property name="typctep" type="java.lang.Short">   <column name="typctep"/>  </property>       
+      <property name="nopctep" type="string">   <column name="nopctep"/>  </property>
+     <property name="dtpctappli" type="date"> <column name="dtpctappli"/> </property>     
+ <property name="langpctep" type="java.lang.Short">   <column name="langpctep"/>  </property>        
+ <property name="orictry" type="string">   <column name="orictry"/>  </property>       
+   <property name="nopubli" type="string">   <column name="nopubli"/>  </property>       
+  <property name="dtpctpubli" type="date"> <column name="dtpctpubli"/> </property>      
+     <property name="langpubli" type="java.lang.Short">   <column name="langpubli"/>  </property>       
+    <property name="stpctep" type="java.lang.Short">   <column name="stpctep"/>  </property>       
+      <property name="dtelection" type="date"> <column name="dtelection"/> </property>     
+    <property name="dtnational" type="date"> <column name="dtnational"/> </property>     
+   <property name="nboppo" type="java.lang.Short">   <column name="nboppo"/>  </property>       
+  
+    </class>
+</hibernate-mapping>

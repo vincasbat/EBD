@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Inventor" table="inventor">
+   <id name="idinvent" type="java.lang.Integer" column="idinvent"> <generator class="native"/>   </id>
+  <property name="epoidinvent" type="java.lang.Integer">   <column name="epoidinvent"/>  </property>
+    <property name="tyinventor" type="java.lang.Short">   <column name="tyinventor"/>  </property>  
+  <property name="nminventor" type="string">   <column name="nminventor"/>  </property>
+  <property name="adinventor" type="string">   <column name="adinventor"/>  </property>
+  <property name="idcountry" type="string">   <column name="idcountry"/>  </property>
+  <property name="nmtown" type="string">   <column name="nmtown"/>  </property>
+  <property name="unminventor" type="string">   <column name="unminventor"/>  </property>  
+ </class>
+</hibernate-mapping>

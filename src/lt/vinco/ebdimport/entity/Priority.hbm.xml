@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Priority" table="priority">
+  
+         
+         <composite-id name="id" class="lt.vinco.ebdimport.entity.PriorityId">
+            <key-property name="idappli" type="string">
+                <column name="idappli" length="12" />
+            </key-property>
+             <key-property name="odprio" type="java.lang.Short">
+                <column name="odprio" />
+            </key-property>
+        </composite-id>
+        
+ <property name="typrio" type="java.lang.Short">   <column name="typrio"/>  </property>
+  <property name="idcountry" type="string">   <column name="idcountry"/>  </property>
+  <property name="noprio" type="string">   <column name="noprio"/>  </property>
+  <property name="dtprio" type="date">    <column name="dtprio"  />  </property>
+  <property name="rmprio" type="string">   <column name="rmprio"/>  </property>
+  <property name="stprio" type="java.lang.Short">   <column name="stprio"/>  </property>
+   
+  </class>
+</hibernate-mapping>

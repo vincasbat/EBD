@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lt.vinco.ebdimport.entity.Ptappli" table="ptappli" dynamic-update="true">
+  
+<!--  <property name="firstName" type="string">
+      <column length="45" name="first_name" not-null="true"/>
+    </property>-->
+  
+    
+  <id name="idappli" type="string" >  <column name="idappli"/>  </id>
+  
+    <property name="k_ptappli" type="java.lang.Integer" generated="insert">   <column name="k_ptappli"/>  </property> 
+     
+   <property name="extidappli" type="string">   <column name="extidappli"/>  </property>
+  <property name="idagent" type="java.lang.Integer">   <column name="idagent" />  </property>
+   <property name="idexaminer" type="java.lang.Integer">   <column name="idexaminer"/>  </property>
+   <property name="idpatent" type="string">   <column name="idpatent"/>  </property>
+    <property name="novolume" type="java.lang.Integer">   <column name="novolume" />  </property>
+   <property name="dtappli" type="java.sql.Date">   <column name="dtappli"/>  </property>
+   <property name="idrecept" type="string">   <column name="idrecept"/>  </property>
+   <property name="dtrecept" type="java.sql.Date">   <column name="dtrecept"/>  </property>
+   <property name="langappli" type="java.lang.Integer">   <column name="langappli"/>  </property>
+    <property name="pttyappli" type="java.lang.Integer">   <column name="pttyappli"/>  </property>
+     <property name="tyinvent" type="java.lang.Integer">   <column name="tyinvent"/>  </property>
+   <property name="title" type="string">   <column name="title"/>  </property>
+    <property name="engtitle" type="string">   <column name="engtitle"/>  </property>
+     <property name="stitle" type="string">   <column name="stitle"/>  </property>
+          <property name="lvsecret" type="java.lang.Integer">   <column name="lvsecret"/>  </property>
+     <property name="nbclaim" type="java.lang.Integer">   <column name="nbclaim"/>  </property>
+     <property name="modabstract" type="java.lang.Integer">   <column name="modabstract"/>  </property>
+     <property name="nbdraw" type="java.lang.Integer">   <column name="nbdraw"/>  </property>
+     <property name="vipcmclass" type="java.lang.Integer">   <column name="vipcmclass"/>  </property>
+      <property name="ipcmclass" type="string">   <column name="ipcmclass"/>  </property>
+   <property name="tyapplic" type="java.lang.Integer">   <column name="tyapplic"/>  </property>
+   <property name="dtaccept" type="java.sql.Date">   <column name="dtaccept"/>  </property>
+    <property name="idlocation" type="string">   <column name="idlocation"/>  </property>
+    <property name="lgstappli" type="java.lang.Integer">   <column name="lgstappli"/>  </property>
+    <property name="dtlgstappli" type="java.sql.Date">   <column name="dtlgstappli"/>  </property>
+     <property name="tcstappli" type="java.lang.Integer">   <column name="tcstappli"/>  </property>
+    <property name="dttcstappli" type="java.sql.Date">   <column name="dttcstappli"/>  </property>
+    <property name="dtupdate" type="java.sql.Date">   <column name="dtupdate"/>  </property>
+     <property name="iduser" type="java.lang.Integer">   <column name="iduser"/>  </property>
+  <property name="extidpatent" type="string">   <column name="extidpatent"/>  </property>
+  <property name="tyadrsce" type="java.lang.Integer">   <column name="tyadrsce"/>  </property>
+  <property name="extidrecept" type="string">   <column name="extidrecept"/>  </property>
+  <property name="kdpatent" type="java.lang.Integer">   <column name="kdpatent"/>  </property>
+  <property name="oldlgstappli" type="java.lang.Integer">   <column name="oldlgstappli"/>  </property>
+  <property name="offerlic" type="java.lang.Integer">   <column name="offerlic"/>  </property>
+  <property name="stprint" type="java.lang.Integer">   <column name="stprint"/>  </property>
+   <property name="dtgrant" type="java.sql.Date">   <column name="dtgrant"/>  </property>
+   
+  <property name="dtadvert" type="java.sql.Date">   <column name="dtadvert"/>  </property>
+  <property name="dtnextpay" type="java.sql.Date">   <column name="dtnextpay"/>  </property>
+  <property name="dtptexpi" type="java.sql.Date">   <column name="dtptexpi"/>  </property>
+  <property name="liartdoc" type="string">   <column name="liartdoc"/>  </property>
+  
+  </class>
+</hibernate-mapping>
+

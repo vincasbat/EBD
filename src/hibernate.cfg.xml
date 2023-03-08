@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.InformixDialect</property>
+    <property name="hibernate.connection.driver_class">com.informix.jdbc.IfxDriver</property>
+  
+ <property name="hibernate.connection.url">jdbc:informix-sqli://000:2000/000:INFORMIXSERVER=ol_cs_dbs;user=informix;password=000</property>   
+
+    <property name="hibernate.connection.username">informix</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.ast.ASTQueryTranslatorFactory</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.connection.release_mode">after_statement</property>
+    <mapping resource="lt/vinco/ebdimport/entity/Ptappli.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/History.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Classin.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Agent.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Invent.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Inventor.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Priority.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Jcs_owner.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Own.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Extstate.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Division.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Pctref.hbm.xml"/>
+    <mapping resource="lt/vinco/ebdimport/entity/Represent.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
